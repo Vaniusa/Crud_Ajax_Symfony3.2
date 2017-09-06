@@ -1,0 +1,3 @@
+vaniusa:
+    resource: "@VaniusaBundle/Resources/config/routing.yml"
+    prefix:   /

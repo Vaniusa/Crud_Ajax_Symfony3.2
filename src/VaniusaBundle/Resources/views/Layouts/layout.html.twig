@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <link type="text/css" rel=stylesheet href="{{ asset('assets/css/bootstrap.css') }}">
+        <link type="text/css" rel=stylesheet href="{{ asset('assets/css/estilos.css') }}">
+    {% endblock %}
+    {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('assets/js/jquery-3.1.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/bootstrap.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/sripts.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/insertar-producto-validator.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.validate.js') }}"></script>
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body onload="verProductos()">
+<form method="post" id="formdata" class="form_data">
+    <h3>Nuevo producto</h3>
+    <div class="form-group">
+        <label for="nombre">Nombre producto</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre producto">
+    </div>
+    <div class="form-group">
+        <label for="categoria">Categoria</label>
+        <input type="text" class="form-control" name="categoria" id="categoria" placeholder="Categoria">
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripcion del producto</label>
+        <textarea rows="4" cols="50" class="form-control" name="descripcion" id="descripcion"
+                  placeholder="Descripcion"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="text" class="form-control" name="precio" id="precio" placeholder="Precio">
+    </div>
+    <button type="submit" class="btn btn-info glyphicon glyphicon-floppy-disk">&nbsp;Insertar</button>
+    <button type='button' onclick='verProductos()' class='btn btn-success glyphicon glyphicon-list' id="bottonLista">&nbsp;Lista</button>
+</form>
+<div id="caja" class="caja"></div>
+</body>
+</html>

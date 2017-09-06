@@ -1,0 +1,28 @@
+vaniusa_homepage:
+    path:     /
+    defaults: { _controller: VaniusaBundle:Default:index }
+
+vaniusa_all:
+    path:     /products
+    defaults: { _controller: VaniusaBundle:Product:get }
+    methods: [GET]
+
+vaniusa_create:
+    path:     /product
+    defaults: { _controller: VaniusaBundle:Product:post }
+    methods: [POST]
+
+vaniusa_single:
+    path:     /product/{id}
+    defaults: { _controller: VaniusaBundle:Product:single }
+    methods: [GET]
+
+vaniusa_update:
+    path:     /product/{id}
+    defaults: { _controller: VaniusaBundle:Product:update }
+    methods: [PUT]
+
+vaniusa_delete:
+    path:     /product/{id}
+    defaults: { _controller: VaniusaBundle:Product:delete }
+    methods: [DELETE]

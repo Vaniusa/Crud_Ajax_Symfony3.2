@@ -1,0 +1,9 @@
+bffe17,127.0.0.1,GET,http://localhost:8000/,1504661126,,200
+95aa16,127.0.0.1,GET,http://localhost:8000/products,1504661131,,200
+10b35d,127.0.0.1,GET,http://localhost:8000/products,1504661138,,200
+61f61a,127.0.0.1,GET,http://localhost:8000/product/87,1504661139,,200
+a29162,127.0.0.1,PUT,http://localhost:8000/product/87,1504661155,,200
+b522b0,127.0.0.1,GET,http://localhost:8000/products,1504661155,,200
+cc8d0d,127.0.0.1,DELETE,http://localhost:8000/product/87,1504661160,,200
+d3193e,127.0.0.1,GET,http://localhost:8000/products,1504661160,,200
+a62b37,127.0.0.1,GET,http://localhost:8000/product/86,1504661166,,200
